@@ -299,8 +299,8 @@ body {
 
   .board{
       justify-content: center;
-      grid-template-columns: repeat(3, 100px);
-      grid-template-rows: repeat(3, 80px);
+      grid-template-columns: repeat(3, 120px);
+      grid-template-rows: repeat(3, 100px);
       gap: .7rem;
   }
 
@@ -309,7 +309,7 @@ body {
   }
 
   .sectionWinner {
-    bottom: 300px;
+    bottom: 350px;
     width: 100%;
     max-width: 100%;
     height: auto;
@@ -337,37 +337,29 @@ body {
   }
 }
 
-@media screen and  (max-width: 550px) {
+@media screen and  (max-width: 500px) {
+
+  .boxBase {
+    padding: 40px 0px 0px 20px;
+  }
 
   .title{
     font-size: 50px;
     margin-top: 6rem;
-    margin-bottom: 5rem;
   }
 
   .boxBase {
-    padding: 30px 30px 30px 10px;
-  }
-
-  .board{
-      justify-content: center;
-      grid-template-columns: repeat(3, 90px);
-      grid-template-rows: repeat(3, 70px);
-      gap: .5rem;
-  }
-
-  .cell{
-    font-size: 2rem;  
+    padding: 30px 10px 30px 10px;
   }
 
   .sectionWinner {
-    bottom: 300px;
+    bottom: 350px;
     width: 100%;
     max-width: 100%;
     height: auto;
-    min-height: 300px;
+    min-height: 350px;
     padding: 10px 10px;
-    border: 5px solid #66ffff;
+    border: 3px solid #66ffff;
     box-shadow: 0px 0px 5px 3px #66ffff,
     inset 0px 0px 5px 3px #66ffff;
     -webkit-box-shadow: 0px 0px 5px 3px #66ffff,
@@ -414,72 +406,88 @@ body {
 
 @media screen and  (max-width: 430px) {
 
-  .boxBase {
-    padding: 40px 0px 0px 20px;
-  }
-
   .title{
-    font-size: 50px;
+    font-size:40px;
     margin-top: 6rem;
   }
 
+  .board{
+    justify-content: center;
+    grid-template-columns: repeat(3, 90px);
+    grid-template-rows: repeat(3, 75px);
+    gap: .4rem;
+  }
+
+  .boxBase {
+    padding: 30px 10px 30px 10px;
+  }
+
+  .cell{
+    font-size: 1.9rem;  
+  }
+
   .sectionWinner {
-    bottom: 250px;
+    bottom: 280px;
     width: 100%;
-    max-width: 90%;
+    max-width: 97%;
     height: auto;
-    min-height: 250px;
-    margin-left: 20px;
+    min-height: 260px;
+    border: 2px solid #66ffff;
   }
 
   .titleWinner {
-    font-size: 20px;
+    font-size: 15px;
     margin-bottom: 1.5rem;
   }
 
   .boxWinner {
     width: 85%;
-    height: 40px;
-    font-size: 13px;
+    height: 30px;
     padding: 10px;
-    margin-bottom: 0rem;
+    font-size: 10px;
+    margin-bottom: .5rem;
   }
 
   .btnReset {
-    width: 50%;
-    min-width: 160px;
-    height: 45px;
-    font-size: 15px;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    width: 40%;
+    min-width: 100px;
+    height: 30px;
+    font-size: 12px;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
   }
 }
 
-@media screen and  (max-width: 370px) {
+@media screen and  (max-width: 340px) {
 
   .title{
-    font-size:35px;
-    margin-top: 6rem;
-
+    font-size: 35px;
+    margin-top: 7rem;
   }
 
   .board{
     justify-content: center;
-    grid-template-columns: repeat(3, 60px);
-    grid-template-rows: repeat(3, 50px);
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(3, 65px);
     gap: .4rem;
   }
 
+  .boxBase {
+    padding: 30px 10px 30px 20px;
+  }
+
+
   .cell{
-    font-size: 1.5rem;  
+    font-size: 1.9rem;  
   }
 
   .sectionWinner {
-    bottom: 190px;
+    bottom: 280px;
     width: 100%;
-    max-width: 90%;
+    max-width: 89%;
     height: auto;
-    min-height: 200px;
+    min-height: 260px;
+    margin-left: 20px;
   }
 
   .titleWinner {
